@@ -1,9 +1,9 @@
 ﻿Task? task = null;
 try
 {
-    var Folders = Enumerable.Range(0, 5);
-    task =  Task.WhenAll(Folders.Select(
-    /// using service to get any folders
+    var data = Enumerable.Range(0, 5);
+    task =  Task.WhenAll(data.Select(
+
     async i =>
     {
         await Task.Delay((i + 1) * 1000);
